@@ -1,0 +1,2 @@
+routes:
+ employeeInfo: direct:empInfo
