@@ -28,9 +28,6 @@ public class EmployeeGroupRoute extends RouteBuilder {
 		.log(LoggingLevel.INFO,  "body after process: " + "${in.body}")
 		.aggregate(constant(true), aggregator).completionTimeout(1000)
 		.log(LoggingLevel.INFO, "body after aggregation: "+"${in.body}")
-		.process(e -> {
-			e.getIn().setBody("${in.body}");
-		})
 		.end();
 		
 	}
