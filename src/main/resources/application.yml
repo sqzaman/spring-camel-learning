@@ -1,2 +1,3 @@
 routes:
  employeeInfo: direct:empInfo
+ employeeGroup: direct:empGroup
